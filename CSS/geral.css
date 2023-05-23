@@ -1,0 +1,148 @@
+* {
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+.head {
+  width: 98vw;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  height: 58px;
+  z-index: 5;
+}
+.menu {
+  margin: auto;
+  width: 80vw;
+  min-width: 900px;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  padding: 20px;
+  gap: 30px;
+}
+.item-0 {
+  place-self: start;
+}
+.item-1, .item-2, .item-3, .item-4 {
+place-self: center;
+}
+.item-5, .item-6, .item-7, .item-8 {
+  place-self: end
+ }
+
+ .apresentacao {
+  margin: auto;
+  padding-top: 58px;
+  height: 60vh;
+  width: 80vw;
+  min-width: 900px;
+  max-width: 1000px;
+  background-color: rgba(233, 133, 133, 0.603);
+
+ }
+#projetos {
+  height: 60vh;
+  background-color: aqua;
+  width: 80vw;
+  margin: auto;
+  max-width: 1000px;
+  min-width: 900px;
+ }
+ #projetos h2 { 
+position: absolute; 
+margin: auto;
+} 
+ .caixa-projetos {
+   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  height: 50vh;
+  transform: translate(-0%, 10%);
+  background-color: blue;
+  width: 80vw;
+  max-width: 1000px;
+  margin: auto;
+  min-width: 900px;  
+  align-items: center
+ }
+ .project {
+  display: inline-block;
+  height: 80%;
+  width: 200px;
+  border: 1px solid black;
+  margin: 10px;
+ }
+ #qualificacoes {
+  height: 200px;
+  background-color: blueviolet;
+  width: 80vw;
+  max-width: 1000px;
+  margin: auto;
+  min-width: 900px;
+
+ }
+ .qualy {
+  height: 120px;
+  width: 120px;
+  border: 1px solid black;
+ }
+ .techs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+ }
+ .slide {
+  margin: auto;
+  height: 60vh;
+  width: 80vw;
+  min-width: 900px;
+  max-width: 1000px;
+  background-color: rgba(145, 233, 133, 0.603);
+ }
+ #sobre {
+  margin: auto;
+  height: 25vh;
+  width: 80vw;
+  min-width: 900px;
+  max-width: 1000px;
+  background-color: rgba(133, 156, 233, 0.603);
+ }
+ #contato {
+    display: grid;
+  grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+  height: 45vh;
+  width: 80vw;
+  min-width: 900px;
+  max-width: 1000px;
+  background-color: rgba(255, 231, 96, 0.603);
+
+ }
+ .contact {
+  height: 120px;
+  width: 120px;
+  border: 1px solid black;
+  background-color: bisque;
+  align-items: center;
+ }
+ .c1 {
+  width: 500px;
+  height: 350px;
+  grid-row: 1/3;
+  grid-column: 1/2;
+
+ }
+.c2 {
+  grid-column: 2/4;
+}
+.c3 {
+  grid-column: 4/6;
+}
+.c4 {
+  grid-column: 2/4;
+}
+.c5 {
+  grid-column: 4/6;
+}
