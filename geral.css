@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(/img/background.jpg);
+  background-image: url(./img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -104,7 +104,7 @@ body {
 }
 .fotopessoal {
   position: absolute;
-  background-image: url(/img/imgpessoal.png);
+  background-image: url(./img/imgpessoal.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
