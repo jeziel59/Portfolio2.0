@@ -1,10 +1,19 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
   margin: 0px;
   border: 0px;
   box-sizing: border-box;
 }
+body {
+  background-image: url(../img/back2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
 .head {
-  width: 98vw;
+  width: 100vw;
   background-color: rgb(0, 0, 0);
   position: fixed;
   height: 58px;
@@ -15,9 +24,25 @@
   width: 80vw;
   min-width: 900px;
   display: grid;
-  grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 5fr 1fr 1fr 1fr 1fr 30px 20px 20px 20px;
   padding: 20px;
   gap: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+.menu a {
+  text-decoration: none;
+  color: rgb(214, 214, 214);
+  padding: 8px;
+  border-radius: 20px;
+}
+.item-1 a:hover, .item-2 a:hover, .item-3 a:hover, .item-4 a:hover {
+background-color: rgb(214, 214, 214);
+transition: .5s;
+color: black;
+}
+.icon {
+  height: 20px;
+  width: 20px;
 }
 .item-0 {
   place-self: start;
@@ -32,18 +57,65 @@ place-self: center;
  .apresentacao {
   margin: auto;
   padding-top: 58px;
-  height: 60vh;
+  height: 73.1vh;
   width: 80vw;
   min-width: 900px;
   max-width: 1000px;
-  background-color: rgba(233, 133, 133, 0.603);
+  
+ }
+ .conteudo-apresentacao {
+  height: 55vh;
+  transform: translate(-0%, 20%);
+  background-color: rgb(95, 95, 95);
+  width: 80vw;
+  max-width: 1000px;
+  margin: auto;
+  min-width: 900px;  
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(0, 0, 0, 0.897);
+  border-radius: 8px;
+ }
+ .conteudo-apresentacao h1 {
+  font-size: 2.3em;
+  margin-bottom: 10px;
+  color: white;
+ }
+ .conteudo-apresentacao h2 {
+  font-size: 1.8rem;
+  text-indent: 35px;
+  margin-bottom: 10px;
+  color: white;
+ }
+ .conteudo-apresentacao p { 
+  text-indent: -40px;
+  color: white;
+ }
+ .conteudo-texto {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 150px;
+ }
+ .fotopessoal {
+  position: absolute;
+  background-image: url(../img/img5.png);
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+  height: 350px;
+  width: 350px;
+border-radius: 50%;
+  overflow: hidden;
+  margin-left: 60%;
+  margin-top: 50px;
 
  }
 #projetos {
+  margin: auto;
+  margin-top: 100px;
   height: 60vh;
   background-color: aqua;
   width: 80vw;
-  margin: auto;
+
   max-width: 1000px;
   min-width: 900px;
  }
@@ -77,6 +149,7 @@ margin: auto;
   width: 80vw;
   max-width: 1000px;
   margin: auto;
+  margin-top: 100px;
   min-width: 900px;
 
  }
@@ -100,6 +173,7 @@ margin: auto;
  }
  #sobre {
   margin: auto;
+  margin-top: 100px;
   height: 25vh;
   width: 80vw;
   min-width: 900px;
@@ -145,4 +219,14 @@ margin: auto;
 }
 .c5 {
   grid-column: 4/6;
+}
+.footer {
+  margin-top: 100px;
+  height: 20px;
+  background-color: black;
+  color: aliceblue;
+}
+.footer p {
+  
+  margin-left: 20px;
 }
