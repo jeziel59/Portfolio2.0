@@ -119,15 +119,25 @@ body {
   margin: auto;
   margin-top: 100px;
   height: 60vh;
-  background-color: aqua;
+  background-color: rgba(0, 0, 0, 0.897);
   width: 80vw;
-
+color: white;
   max-width: 1000px;
   min-width: 900px;
+  border-radius: 8px;
 }
 #projetos h2 {
   position: absolute;
-  margin: auto;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+#projetos p {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 20px;
+  z-index: 1;
+  font-family: "Open Sans", sans-serif;
 }
 .caixa-projetos {
   display: grid;
@@ -135,7 +145,7 @@ body {
   justify-items: center;
   height: 50vh;
   transform: translate(-0%, 10%);
-  background-color: blue;
+  background-color: rgba(0, 0, 0, 0.897);
   width: 80vw;
   max-width: 1000px;
   margin: auto;
@@ -148,20 +158,23 @@ body {
   width: 200px;
   border: 1px solid black;
   margin: 10px;
+  background-color: lightblue;
 }
 #qualificacoes {
   height: 200px;
-  background-color: blueviolet;
+  background-color: rgba(0, 0, 0, 0.897);
   width: 80vw;
   max-width: 1000px;
   margin: auto;
   margin-top: 100px;
   min-width: 900px;
+  border-radius: 8px 8px 0px 0px;
 }
 .qualy {
   height: 120px;
   width: 120px;
   border: 1px solid black;
+  background-color: lightblue;
 }
 .techs {
   display: grid;
@@ -174,6 +187,7 @@ body {
   width: 80vw;
   min-width: 900px;
   max-width: 1000px;
+  border-radius: 0 0 8px 8px;
   background-color: rgba(145, 233, 133, 0.603);
 }
 #sobre {
@@ -183,7 +197,37 @@ body {
   width: 80vw;
   min-width: 900px;
   max-width: 1000px;
-  background-color: rgba(133, 156, 233, 0.603);
+  background-color: rgba(0, 0, 0, 0.897);
+  color: black;
+  display: grid;
+  border-radius: 8px 8px 0 0;
+}
+.artigo-sobre {
+  height: 90%;
+  width: 94%;
+  background-color: rgba(245, 245, 245, 0.836);
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+.artigo-sobre h2, p{
+  padding: 10px;
+  text-indent: 20px;
+}
+.artigo-sobre button {  
+  float: right;
+  margin-top: 10px;
+  margin-right: 50px;
+  padding: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.artigo-sobre button:hover {
+ background-color: aquamarine; 
+ transition: .3s;
 }
 #contato {
   display: grid;
@@ -196,7 +240,8 @@ body {
   width: 80vw;
   min-width: 900px;
   max-width: 1000px;
-  background-color: rgba(255, 231, 96, 0.603);
+  background-color: rgba(0, 0, 0, 0.897);
+  border-radius: 0 0 8px 8px;
 }
 .contact {
   height: 120px;
