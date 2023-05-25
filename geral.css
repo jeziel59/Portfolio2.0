@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@media (min-width: 320px) and (max-width: 800px){
 * {
   margin: 0px;
   border: 0px;
@@ -15,160 +16,167 @@ body {
   width: 100vw;
   background-color: rgb(0, 0, 0);
   position: fixed;
-  height: 58px;
+  height: 60px;
   z-index: 5;
 }
-.menu {
-  margin: auto;
-  width: 80vw;
-  min-width: 900px;
-  display: grid;
-  grid-template-columns: 5fr 1fr 1fr 1fr 1fr 30px 20px 20px 20px;
-  padding: 20px;
-  gap: 30px;
-  font-family: "Open Sans", sans-serif;
-}
-.menu a {
-  text-decoration: none;
-  color: rgb(214, 214, 214);
-  padding: 8px;
-  border-radius: 20px;
-}
-.item-1 a:hover,
-.item-2 a:hover,
-.item-3 a:hover,
-.item-4 a:hover {
-  background-color: rgb(214, 214, 214);
-  transition: 0.5s;
-  color: black;
-}
-.icon {
-  height: 20px;
-  width: 20px;
-}
-.item-0 {
-  place-self: start;
-}
-.item-1,
-.item-2,
-.item-3,
-.item-4 {
-  place-self: center;
-}
-.item-5,
-.item-6,
-.item-7,
-.item-8 {
-  place-self: end;
+.menuMobile {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+border: none;
+border-radius: 4px;
+cursor: pointer;
+background-image: url(img/abrir.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+
 }
 
+.menu {
+  width: 150px;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  margin-top: 60px;
+  display: none;
+}
+.active {
+  display: block;
+}
+.item {
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.item a {
+  text-decoration: none;
+  margin-left: -30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+}
+.item a:hover {
+  background-color: white;
+  color: black;
+}
+.sociais {
+  height: 60px;
+  width: 200px;
+  float: right;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+.icon {
+  margin-top: 10px;
+  height: 30px;
+  width: 30px;
+}
 .apresentacao {
   margin: auto;
-  padding-top: 58px;
-  height: 73.1vh;
+  padding-top: 25px;
+  height: 565px;
   width: 80vw;
-  min-width: 900px;
-  max-width: 1000px;
+
 }
 .conteudo-apresentacao {
-  height: 55vh;
+  height: 450px;
   transform: translate(-0%, 20%);
   background-color: rgb(95, 95, 95);
   width: 80vw;
-  max-width: 1000px;
   margin: auto;
-  min-width: 900px;
   font-family: "Open Sans", sans-serif;
   background-color: rgba(0, 0, 0, 0.897);
   border-radius: 8px;
 }
 .conteudo-apresentacao h1 {
-  font-size: 2.3em;
+  font-size: 1.5em;
   margin-bottom: 10px;
   color: white;
 }
 .conteudo-apresentacao h2 {
-  font-size: 1.8rem;
-  text-indent: 35px;
+  font-size: 1rem;
+
   margin-bottom: 10px;
   color: white;
 }
 .conteudo-apresentacao p {
-  text-indent: -40px;
   color: white;
 }
 .conteudo-texto {
   position: absolute;
-  margin-left: 100px;
-  margin-top: 150px;
+  margin-left: 30px;
+  margin-top: 280px;
 }
 .fotopessoal {
-  position: absolute;
-  background-image: url(./img/imgpessoal.png);
+  background-image: url(../img/imgpessoal.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
   overflow: hidden;
-  margin-left: 60%;
-  margin-top: 50px;
+  margin: auto;
 }
 #projetos {
   margin: auto;
-  margin-top: 100px;
-  height: 60vh;
+  margin-top: 60px;
+  height: 990px;
   background-color: rgba(0, 0, 0, 0.897);
   width: 80vw;
-color: white;
-  max-width: 1000px;
-  min-width: 900px;
+  color: white;
   border-radius: 8px;
 }
 #projetos h2 {
-  position: absolute;
-  margin-left: 20px;
-  margin-top: 10px;
   font-family: "Open Sans", sans-serif;
+  margin-left: 20px;
+  padding: 10px;
 }
 #projetos p {
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 20px;
-  z-index: 1;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 30px;
+  margin-left: 15px;
 }
 .caixa-projetos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   justify-items: center;
-  height: 50vh;
-  transform: translate(-0%, 10%);
   background-color: rgba(0, 0, 0, 0.897);
-  width: 80vw;
-  max-width: 1000px;
   margin: auto;
-  min-width: 900px;
   align-items: center;
+  height: 790px;
+  width: 90%;
 }
 .project {
   display: inline-block;
-  height: 80%;
-  width: 200px;
+  height: 170px;
+  width: 90%;
   border: 1px solid black;
   margin: 10px;
   background-color: lightblue;
 }
+
 #qualificacoes {
-  height: 200px;
+  height: 500px;
   background-color: rgba(0, 0, 0, 0.897);
   width: 80vw;
-  max-width: 1000px;
   margin: auto;
   margin-top: 100px;
-  min-width: 900px;
   border-radius: 8px 8px 0px 0px;
+}
+#qualificacoes h2 {
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  padding: 20px;
 }
 .qualy {
   height: 120px;
@@ -178,44 +186,48 @@ color: white;
 }
 .techs {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   justify-items: center;
+  gap: 20px;
 }
+
 .slide {
   margin: auto;
-  height: 60vh;
+  height: 300px;
   width: 80vw;
-  min-width: 900px;
-  max-width: 1000px;
   border-radius: 0 0 8px 8px;
-  background-color: rgba(145, 233, 133, 0.603);
+  background-color: rgba(0, 0, 0, 0.897);
 }
 #sobre {
   margin: auto;
-  margin-top: 100px;
-  height: 25vh;
+  margin-top: 30px;
+  height: 380px;
   width: 80vw;
-  min-width: 900px;
-  max-width: 1000px;
   background-color: rgba(0, 0, 0, 0.897);
   color: black;
   display: grid;
   border-radius: 8px 8px 0 0;
 }
 .artigo-sobre {
-  height: 90%;
-  width: 94%;
+  height: 330px;
+  width: 90%;
   background-color: rgba(245, 245, 245, 0.836);
   margin: auto;
   font-family: "Open Sans", sans-serif;
   border-radius: 8px;
   margin-top: 25px;
 }
-.artigo-sobre h2, p{
+
+.artigo-sobre h2 {
   padding: 10px;
   text-indent: 20px;
 }
-.artigo-sobre button {  
+.artigo-sobre  p {
+  padding: 10px;
+  text-indent: 20px;
+}
+.artigo-sobre button {
   float: right;
   margin-top: 10px;
   margin-right: 50px;
@@ -225,55 +237,61 @@ color: white;
   cursor: pointer;
   border-radius: 5px;
 }
+
 .artigo-sobre button:hover {
- background-color: aquamarine; 
- transition: .3s;
+  background-color: aquamarine;
+  transition: 0.3s;
 }
+
 #contato {
   display: grid;
-  grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+  margin: auto;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
   align-items: center;
-  margin: auto;
-  height: 45vh;
+
+  height: 400px;
   width: 80vw;
-  min-width: 900px;
-  max-width: 1000px;
   background-color: rgba(0, 0, 0, 0.897);
   border-radius: 0 0 8px 8px;
 }
 .contact {
-  height: 120px;
-  width: 120px;
-  border: 1px solid black;
-  background-color: bisque;
-  align-items: center;
+    height: 80px;
+  width: 80px;
+  background-color: aqua;
 }
 .c1 {
-  width: 500px;
-  height: 350px;
-  grid-row: 1/3;
-  grid-column: 1/2;
+  background-color: aqua;
+  width: 350px;
+  height: 200px;
+  grid-column: 1/3;
 }
+
 .c2 {
-  grid-column: 2/4;
+
+
 }
 .c3 {
-  grid-column: 4/6;
+
+
 }
 .c4 {
-  grid-column: 2/4;
+
 }
 .c5 {
-  grid-column: 4/6;
+
 }
 .footer {
-  margin-top: 100px;
-  height: 20px;
+  margin-top: 110px;
+  height: 25px;
   background-color: black;
   color: aliceblue;
 }
 .footer p {
+  margin-top: 10px;
   margin-left: 20px;
 }
+
+
+}
+

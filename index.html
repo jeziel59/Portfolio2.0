@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="geral.css" />
+    <link rel="stylesheet" href="./css/desktop.css" media="screen">
+    <link rel="stylesheet" href="geral.css" media="screen">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -13,17 +14,20 @@
   <body>
     <header class="head">
       <nav>
-        <ul class="menu">
-          <div class="item-0"><a href="">Jeziel Silva</a></div>
-          <div class="item-1"><a href="#projetos">Portfólio</a></div>
-          <div class="item-2"><a href="#qualificacoes">Qualificações</a></div>
-          <div class="item-3"><a href="#sobre">Sobre</a></div>
-          <div class="item-4"><a href="#contato">Contato</a></div>
-          <div class="item-5"><a href=""><img src="img/linkedin.png" alt="" class="icon"></a></div>
-          <div class="item-6"><a href=""><img src="img/github.png" alt="" class="icon"></a></div>
-          <div class="item-7"><a href=""><img src="img/facebook.png" alt="" class="icon"></a></div>
-          <div class="item-8"><a href=""><img src="img/instagram.png" alt="" class="icon"></a></div>
+        <button class="menuMobile" data-menu="button"></button>
+        <ul class="menu" data-menu="list">
+          <div class="item-0 item"><a href="">Jeziel Silva</a></div>
+          <div class="item-1 item"><a href="#projetos">Portfólio</a></div>
+          <div class="item-2 item"><a href="#qualificacoes">Qualificações</a></div>
+          <div class="item-3 item"><a href="#sobre">Sobre</a></div>
+          <div class="item-4 item"><a href="#contato">Contato</a></div>
         </ul>
+        <section class="sociais">
+        <div class="item-"><a href=""><img src="img/linkedin.png" alt="" class="icon"></a></div>
+          <div class="item-"><a href=""><img src="img/github.png" alt="" class="icon"></a></div>
+          <div class="item-"><a href=""><img src="img/facebook.png" alt="" class="icon"></a></div>
+          <div class="item-"><a href=""><img src="img/instagram.png" alt="" class="icon"></a></div>
+        </section>
       </header>
       </nav>
       <main>
@@ -36,7 +40,7 @@
             </div>
             <div class="fotopessoal"></div>
           </div>
-          <div><img src="" alt=""></div>
+
         </section>
         <section id="projetos">
           <h2>Projetos Front-end</h2>
@@ -82,8 +86,6 @@
           <p>© 2023 Jeziel Silva</p>
         </footer>
       </main>
-
-
-
+      <script type="module" src="./Javascript/script.js"></script>
   </body>
 </html>
