@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(./img/background.jpg);
+  background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -29,12 +29,12 @@ body {
 border: none;
 border-radius: 4px;
 cursor: pointer;
-background-image: url(img/abrir.png);
+background-image: url(../img/abrir.png);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: center;
-
 }
+
 
 .menu {
   width: 150px;
@@ -46,7 +46,35 @@ background-position: center;
 }
 .active {
   display: block;
+  animation: slideinleft 1s;
 }
+@keyframes slideinleft {
+  from {
+      transform: translateX(-200px);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+.menuMobile.active {
+  background-image: url(../img/fechar.png);
+  background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+animation: animaMenu .3s;
+}
+@keyframes animaMenu {
+  from {
+      transform: rotate(-180deg);
+  }
+  to {
+      transform: rotate(0);
+  }
+}
+
+
+
 .item {
   margin-top: 15px;
   border-radius: 10px;
@@ -116,7 +144,7 @@ background-position: center;
   margin-top: 280px;
 }
 .fotopessoal {
-  background-image: url(./img/imgpessoal.png);
+  background-image: url(../img/imgpessoal.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -262,7 +290,7 @@ background-position: center;
 }
 .c1 {
   background-color: aqua;
-  width: 350px;
+  width: 280px;
   height: 200px;
   grid-column: 1/3;
 }
