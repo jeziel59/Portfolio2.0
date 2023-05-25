@@ -1,0 +1,313 @@
+@charset "UTF-8";
+@media screen and (min-width: 800px) {
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+  * {
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .head {
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    height: 60px;
+    z-index: 5;
+  }
+  .sociais {
+    height: 60px;
+    width: 200px;
+     float: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: -60px;
+    margin-right: 20px;
+  }
+  .icon {
+    margin-top: 15px;
+    height: 30px;
+    width: 30px;
+  }
+  .menuMobile {
+    display: none;
+  }
+  .menu {
+    height: 60px;
+    margin: auto;
+    width: 80vw;
+    min-width: 800px;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr 1fr 30px 20px 20px 20px;
+    padding: 20px;
+    gap: 30px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .menu a {
+    text-decoration: none;
+    color: rgb(214, 214, 214);
+    padding: 8px;
+    border-radius: 20px;
+  }
+  .item-1 a:hover,
+  .item-2 a:hover,
+  .item-3 a:hover,
+  .item-4 a:hover {
+    background-color: rgb(214, 214, 214);
+    transition: 0.5s;
+    color: black;
+  }
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
+  .item-0 {
+    place-self: start;
+  }
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4 {
+    place-self: center;
+  }
+  .item-5,
+  .item-6,
+  .item-7,
+  .item-8 {
+    place-self: end;
+  }
+  
+  .apresentacao {
+    margin: auto;
+    padding-top: 58px;
+    height: 670px;
+    width: 80vw;
+    min-width: 900px;
+    max-width: 1000px;
+
+  }
+  .conteudo-apresentacao {
+    height: 510px;
+    transform: translate(-0%, 20%);
+    background-color: rgb(95, 95, 95);
+    width: 80vw;
+    max-width: 1000px;
+    margin: auto;
+    min-width: 900px;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgba(0, 0, 0, 0.897);
+    border-radius: 8px;
+  }
+  .conteudo-apresentacao h1 {
+    font-size: 2.3em;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .conteudo-apresentacao h2 {
+    font-size: 1.8rem;
+    text-indent: 35px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .conteudo-apresentacao p {
+    text-indent: -40px;
+    color: white;
+  }
+  .conteudo-texto {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 150px;
+  }
+  .fotopessoal {
+    position: absolute;
+    background-image: url(../img/imgpessoal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 60%;
+    margin-top: 50px;
+  }
+  #projetos {
+    margin: auto;
+    margin-top: 100px;
+    height: 465px;
+    background-color: rgba(0, 0, 0, 0.897);
+    width: 80vw;
+  color: white;
+    max-width: 1000px;
+    min-width: 900px;
+    border-radius: 8px;
+  }
+  #projetos h2 {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+  }
+  #projetos p {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 20px;
+    z-index: 1;
+    font-family: "Open Sans", sans-serif;
+  }
+  .caixa-projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    height: 400px;
+    transform: translate(-0%, 10%);
+    background-color: rgba(0, 0, 0, 0.897);
+    width: 80vw;
+    max-width: 1000px;
+    margin: auto;
+    min-width: 900px;
+    align-items: end
+
+  }
+  .project {
+    display: inline-block;
+    height: 80%;
+    width: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    background-color: lightblue;
+  }
+  #qualificacoes {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.897);
+    width: 80vw;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    min-width: 900px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .qualy {
+    height: 120px;
+    width: 120px;
+    border: 1px solid black;
+    background-color: lightblue;
+  }
+  .techs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .slide {
+    margin: auto;
+    height: 60vh;
+    width: 80vw;
+    min-width: 900px;
+    max-width: 1000px;
+    border-radius: 0 0 8px 8px;
+    background-color: rgba(145, 233, 133, 0.603);
+  }
+  #sobre {
+    margin: auto;
+    margin-top: 100px;
+    height: 250px;
+    width: 80vw;
+    min-width: 900px;
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0, 0.897);
+    color: black;
+    display: grid;
+    border-radius: 8px 8px 0 0;
+  }
+  .artigo-sobre {
+    height: 80%;
+    width: 90%;
+    background-color: rgba(245, 245, 245, 0.836);
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 8px;
+    margin-top: 25px;
+  }
+  .artigo-sobre h2, p{
+    padding: 10px;
+    text-indent: 20px;
+  }
+  .artigo-sobre button {  
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    padding: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .artigo-sobre button:hover {
+   background-color: aquamarine; 
+   transition: .3s;
+  }
+  #contato {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    height: 420px;
+    width: 80vw;
+    min-width: 900px;
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0, 0.897);
+    border-radius: 0 0 8px 8px;
+  }
+  .contact {
+    height: 120px;
+    width: 120px;
+    border: 1px solid black;
+    background-color: rgb(203, 252, 255);
+
+  }
+  .c1 {
+    width: 450px;
+    height: 300px;
+    grid-row: 1/3;
+    grid-column: 1/2;
+  }
+  .c2 {
+    grid-column: 2/4;
+    justify-self: end;
+    align-self: end;
+  }
+  .c3 {
+    grid-column: 4/6;
+    justify-self: start;
+    align-self: end;
+  }
+  .c4 {
+    grid-column: 2/4;
+    justify-self: end;
+    align-self: start;
+  }
+  .c5 {
+    grid-column: 4/6;
+    justify-self: start;
+    align-self: start;
+  }
+  .footer {
+    margin-top: 110px;
+    height: 35px;
+    background-color: black;
+    color: aliceblue;
+  }
+  .footer p {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+}
