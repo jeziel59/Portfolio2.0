@@ -140,7 +140,6 @@
     height: 120px;
     width: 120px;
     border: 1px solid black;
-    background-color: lightblue;
   }
   .techs {
     display: grid;
@@ -179,8 +178,7 @@
     border-radius: 8px;
     margin-top: 25px;
   }
-  .artigo-sobre h2,
-  p {
+  .artigo-sobre h2 {
     padding: 10px;
     text-indent: 20px;
   }
