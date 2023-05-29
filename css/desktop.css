@@ -98,14 +98,6 @@
     min-width: 900px;
     border-radius: 8px;
   }
-  #projetos h2 {
-    margin-left: 20px;
-    margin-top: 10px;
-  }
-  #projetos p {
-    margin-top: 5px;
-    margin-left: 20px;
-  }
   .caixa-projetos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -124,6 +116,21 @@
     width: 200px;
     margin: 10px;
     background-color: rgba(173, 216, 230, 0.623);
+  }
+  .content-project {
+    height: 170px;
+  }
+  .projeto-1 {
+    background-image: url(../img/login-pc.png);
+  }
+  .projeto-2 {
+    background-image: url(../img/cadastro-pc.png);
+  }
+  .projeto-3 {
+    background-image: url(../img/animais-pc.png);
+  }
+  .projeto-4 {
+    background-image: url(../img/pet-pc.png);
   }
   /* QUALIFICAÇÕES */
   #qualificacoes {
@@ -154,7 +161,7 @@
     min-width: 900px;
     max-width: 1000px;
     border-radius: 0 0 8px 8px;
-    background-color: rgba(145, 233, 133, 0.603);
+    background-color: rgba(0, 0, 0, 0.603);
   }
   /* SOBRE */
   #sobre {

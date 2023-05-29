@@ -29,6 +29,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
   }
   /* HEAD */
   .head {
@@ -154,21 +155,28 @@
   #projetos {
     margin: auto;
     margin-top: 60px;
-    height: 990px;
+    height: 970px;
     background-color: rgba(0, 0, 0, 0.897);
     width: 80vw;
     color: white;
     border-radius: 8px;
   }
-  #projetos h2 {
+  .titulo-projetos {
     font-family: "Open Sans", sans-serif;
-    margin-left: 20px;
-    padding: 10px;
+    margin-left: 30px;
+    padding-top: 30px;
   }
-  #projetos p {
+.text-projetos {
     font-family: "Open Sans", sans-serif;
-    margin-bottom: 30px;
+    font-size: 0.9rem;
     margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .text-projetos a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
   }
   .caixa-projetos {
     display: grid;
@@ -184,10 +192,61 @@
   .project {
     display: inline-block;
     height: 170px;
-    width: 90%;
+    width: 95%;
     border: 1px solid black;
     margin: 10px;
-    background-color: lightblue;
+    box-shadow: inset 0px 0px 100px 0px rgba(0, 0, 0, 0.897);;
+    border-radius: 10px;
+
+  }
+   .projeto-1 {
+    background-image: url(../img/login-cel.png);
+  }
+  .projeto-2 {
+    background-image: url(../img/cadastro-cel.png);
+  }
+  .projeto-3 {
+    background-image: url(../img/animais-cel.png);
+  }
+  .projeto-4 {
+    background-image: url(../img/pet-cel.png);
+  }
+  .content-project {
+    height: 130px;
+    width: 95%;
+    background-color: rgb(236, 236, 236);
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: black;
+    
+  }
+  .content-project a {
+    text-decoration: none;
+    color: black;
+  }
+  .content-project h2 {
+    font-size: 1.3rem;
+    color: black;
+    padding-top: 15px;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 15px;
+  }
+  .content-project p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    margin-left: 15px;
+  }
+  .content-project a::after {
+    content: "";
+    background-image: url("../img/acess.png");
+    width: 15px;
+    height: 15px;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 8px;
   }
   /* QUALIFICAÇÕES */
   #qualificacoes {
