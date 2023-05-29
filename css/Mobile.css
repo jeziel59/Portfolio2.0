@@ -29,7 +29,6 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
   }
   /* HEAD */
   .head {
@@ -118,7 +117,7 @@
     font-family: "Open Sans", sans-serif;
     background-color: rgba(0, 0, 0, 0.897);
     border-radius: 8px;
-    padding: 20px;
+    padding: 9px;
   }
   .conteudo-apresentacao h1 {
     font-size: 1.5em;
@@ -158,7 +157,7 @@
     height: 970px;
     background-color: rgba(0, 0, 0, 0.897);
     width: 80vw;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 8px;
   }
   .titulo-projetos {
@@ -166,7 +165,7 @@
     margin-left: 30px;
     padding-top: 30px;
   }
-.text-projetos {
+  .text-projetos {
     font-family: "Open Sans", sans-serif;
     font-size: 0.9rem;
     margin-left: 15px;
@@ -189,17 +188,53 @@
     height: 790px;
     width: 90%;
   }
+  @keyframes slideinleft {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .content-project.activeTab {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.911);
+    color: black;
+    border-radius: 10px;
+    animation: slideinleft 0.5s;
+    font-family: "Open Sans", sans-serif;
+    padding: 10px;
+    padding-bottom: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.473);
+  }
+  .content-project.activeTab a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  .content-project {
+    display: none;
+  }
+  .titulosH2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7rem;
+  }
+  .titulosH2.activeTab {
+    display: none;
+    transition: 0.8s;
+  }
   .project {
     display: inline-block;
     height: 170px;
-    width: 95%;
+    width: 100%;
     border: 1px solid black;
     margin: 10px;
-    box-shadow: inset 0px 0px 100px 0px rgba(0, 0, 0, 0.897);;
+    box-shadow: inset 0px 0px 100px 0px rgba(0, 0, 0, 0.897);
     border-radius: 10px;
-
+    padding: 12px;
   }
-   .projeto-1 {
+  .projeto-1 {
     background-image: url(../img/login-cel.png);
   }
   .projeto-2 {
@@ -211,31 +246,9 @@
   .projeto-4 {
     background-image: url(../img/pet-cel.png);
   }
-  .content-project {
-    height: 130px;
-    width: 95%;
-    background-color: rgb(236, 236, 236);
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 20px;
-    color: black;
-    
-  }
-  .content-project a {
-    text-decoration: none;
-    color: black;
-  }
-  .content-project h2 {
-    font-size: 1.3rem;
-    color: black;
-    padding-top: 15px;
-    font-family: "Open Sans", sans-serif;
-    margin-left: 15px;
-  }
   .content-project p {
     font-family: "Open Sans", sans-serif;
     font-size: 0.9rem;
-    margin-left: 15px;
   }
   .content-project a::after {
     content: "";
@@ -245,8 +258,8 @@
     background-size: 15px 15px;
     background-repeat: no-repeat;
     position: absolute;
-    margin-left: 5px;
-    margin-top: 8px;
+    margin-left: 1px;
+    margin-top: 3px;
   }
   /* QUALIFICAÇÕES */
   #qualificacoes {
@@ -285,7 +298,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     justify-items: center;
-    gap: 20px;
+    gap: 15px;
   }
   /* SLIDE */
   .slide {
@@ -314,6 +327,7 @@
     font-family: "Open Sans", sans-serif;
     border-radius: 8px;
     margin-top: 25px;
+    min-width: 235px;
   }
   .artigo-sobre h2 {
     padding: 10px;
@@ -322,11 +336,12 @@
   .artigo-sobre p {
     padding: 10px;
     text-indent: 20px;
+
   }
   .artigo-sobre button {
     float: right;
-    margin-top: 10px;
-    margin-right: 50px;
+
+    margin-right: 15px;
     padding: 8px;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
@@ -334,8 +349,16 @@
     border-radius: 5px;
   }
   .artigo-sobre button:hover {
-    background-color: aquamarine;
+    background-color: rgba(0, 0, 0, 0.61);
     transition: 0.3s;
+    color: white;
+  }
+  .artigo-sobre button a {
+    text-decoration: none;
+    color: black;
+  }
+  .artigo-sobre button a:hover {
+    color: white;
   }
   /* CONTATO */
   #contato {
@@ -355,7 +378,7 @@
   .contact {
     height: 80px;
     width: 80px;
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0.185);
     border: 1px solid black;
   }
   .c0 {
