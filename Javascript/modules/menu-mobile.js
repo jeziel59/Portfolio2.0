@@ -4,7 +4,7 @@ export default class MenuMobile {
   constructor(menuButton, menuList, events) {
     this.menuButton = document.querySelector(menuButton);
     this.menuList = document.querySelector(menuList);
-    this.classActive = "active";
+    this.classActive = "activeMenu";
     if (events === undefined) this.events = ["touchstart", "click"];
     else this.events = events;
 
