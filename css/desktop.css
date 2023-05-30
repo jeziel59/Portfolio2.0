@@ -61,14 +61,13 @@
   /* APRESENTAÇÕES */
   .apresentacao {
     margin: auto;
-    padding-top: 58px;
-    height: 670px;
+    height: 589px;
     width: 80vw;
     min-width: 900px;
     max-width: 1000px;
   }
   .conteudo-apresentacao {
-    height: 510px;
+    height: 470px;
     max-width: 1000px;
     min-width: 900px;
   }
@@ -89,8 +88,8 @@
   /* PROJETOS */
   #projetos {
     margin: auto;
-    margin-top: 100px;
-    height: 465px;
+    margin-top: 60px;
+    height: 522px;
     background-color: rgba(0, 0, 0, 0.897);
     width: 80vw;
     color: white;
@@ -137,7 +136,7 @@
     width: 80vw;
     max-width: 1000px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 60px;
     min-width: 900px;
     border-radius: 8px 8px 0px 0px;
   }
@@ -164,7 +163,7 @@
   /* SOBRE */
   #sobre {
     margin: auto;
-    margin-top: 100px;
+    margin-top: 60px;
     height: 250px;
     width: 80vw;
     min-width: 900px;
@@ -243,15 +242,5 @@
 
         grid-column: 6/7;
   }
-  /* FOOTER */
-  .footer {
-    margin-top: 110px;
-    height: 35px;
-    background-color: black;
-    color: aliceblue;
-  }
-  .footer p {
-    margin-top: 10px;
-    margin-left: 20px;
-  }
+
 }
