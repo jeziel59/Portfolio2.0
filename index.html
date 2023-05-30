@@ -11,13 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Portfólio Jeziel Silva</title>
+    <script>
+      document.documentElement.className += " js";
+    </script>
   </head>
   <body>
     <header class="head">
       <nav data-menu="suave">
         <button class="menuMobile" data-menu="button"></button>
         <ul class="menu" data-menu="list">
-          <div class="item-0 item"><a href="">Jeziel Silva</a></div>
+          <div class="item-0 item"><a href="#apresentacao">Jeziel Silva</a></div>
           <div class="item-1 item"><a href="#projetos">Portfólio</a></div>
           <div class="item-2 item"><a href="#qualificacoes">Qualificações</a></div>
           <div class="item-3 item"><a href="#sobre">Sobre</a></div>
@@ -32,7 +35,7 @@
       </header>
       </nav>
       <main>
-        <section class="apresentacao">
+        <section id="apresentacao">
           <div class="conteudo-apresentacao">
             <div class="fotopessoal"></div>
             <div class="conteudo-texto">
@@ -42,7 +45,7 @@
             </div>
           </div>
         </section>
-        <section id="projetos">
+        <section id="projetos" data-anime="scroll">
           <h2 class="titulo-projetos">Projetos Front-end</h2>
           <p class="text-projetos">Projetos  100% desenvolvidos pelo Visual Studio Code, visite meus repositorios no <a href="https://github.com/jeziel59" target="_blank" rel="external">GitHub!</a></p>
           <article class="caixa-projetos">
@@ -76,7 +79,8 @@
             </div>
           </article>
         </section>
-        <section id="qualificacoes">
+        <section data-anime="scroll">
+        <section id="qualificacoes" data-anime="scroll">
           <h2>Qualificações</h2>
           <article class="techs">
             <div class="qualy">
@@ -126,9 +130,10 @@
       </ul>
     </div>
   </section>
-
+</section>
         </section>
-        <section id="sobre">
+        <section data-anime="scroll">
+        <section id="sobre" >
           <article class="artigo-sobre">
           <h2>Sobre</h2>
           <p>Com propósito de transição de carreira, iniciei meus estudos como
@@ -140,7 +145,7 @@
           <a href="https://github.com/jeziel59/Apresentacao-e-certificados/blob/main/Apresenta%C3%A7%C3%A3o%20Jeziel%20Silva.pdf" target="_blank" rel="external"><button>Download CV</button></a>
           </article>
         </section>
-        <section id="contato">
+        <section id="contato" data-anime="scroll">
           <div class="contact c0">
             <h2>Contato</h2>
             <p>Entre em contato por Email</p>
@@ -162,6 +167,7 @@
               <div class="contact c5"><a href="https://www.linkedin.com/in/jeziel-silva-aa7095226/"><img src="img/icones-contato/linkedin.png" alt=""></a></div>
               <div class="contact c6"><a href="https://www.instagram.com/jeziel.7k/"><img src="img/icones-contato/instagram .png" alt=""></a></div>
         </section>
+      </section>
         <footer class="footer">
           <p>© 2023 Jeziel Silva</p>
         </footer>

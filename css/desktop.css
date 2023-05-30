@@ -59,7 +59,7 @@
     gap: 10px;
   }
   /* APRESENTAÇÕES */
-  .apresentacao {
+  #apresentacao {
     margin: auto;
     height: 589px;
     width: 80vw;
