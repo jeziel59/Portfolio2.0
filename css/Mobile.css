@@ -392,7 +392,6 @@
   }
   .artigo-sobre button {
     float: right;
-
     margin-right: 15px;
     padding: 8px;
     font-family: "Open Sans", sans-serif;
@@ -430,8 +429,8 @@
   .contact {
     height: 80px;
     width: 80px;
-    background-color: rgba(0, 255, 255, 0.185);
-    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.897);
+
   }
   .c0 {
     width: 80%;
@@ -439,11 +438,54 @@
     grid-column: 1/5;
     background-color: rgba(0, 0, 0, 0);
     font-size: 18px;
+    width: 80%;
+    height: 50px;
   }
   .c1 {
     width: 100%;
-    height: 200px;
+    height: 280px;
     grid-column: 1/5;
+  }
+  .formEmail {
+    display: grid;
+    gap: 3px;
+    width: 80%;
+    margin: auto;
+
+  }
+  #email {
+    border-radius: 4px;
+    height: 25px;
+    text-indent: 6px;
+
+  }
+  #nome {
+
+  border-radius: 4px;
+  height: 25px;
+  text-indent: 6px;
+  }
+#msg {
+resize: none;
+height: 100px;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  text-indent: 10px;
+  }
+  .botoes {
+    height: 20px;
+    width: 80px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+
+  }
+.botoes:hover {
+    background-color: rgba(0, 0, 0, 0.61);
+    transition: 0.3s;
+    color: white;
   }
   .c2 {
     width: 80%;
@@ -454,19 +496,33 @@
   }
   .c3 {
     width: 100%;
+    display: grid;
+    justify-items: center;
+    border-radius: 0px 0px 0px 8px;
   }
   .c4 {
     width: 100%;
+    display: grid;
+    justify-items: center
   }
   .c5 {
     width: 100%;
+    display: grid;
+    justify-items: center
   }
   .c6 {
     width: 100%;
+    display: grid;
+    justify-items: center;
+    border-radius: 0px 0px 8px 0px;
+  }
+  #contato img {
+    height: 50px;
+    width: 50px;
   }
   /* FOOTER */
   .footer {
-    margin-top: 60px;
+    margin-top: 90px;
     margin-bottom: 10px;
     height: 19px;
     background-color: black;
