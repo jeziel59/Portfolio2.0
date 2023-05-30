@@ -11,3 +11,9 @@ import moveProject from "./modules/moveProject.js";
 
  const moveproject = new moveProject('.titulosH2', '.content-project');
  moveproject.init();
+
+ import SlideNav from './modules/slide.js'
+
+ const slide = new SlideNav('.slide', '.slide-wrapper')
+slide.init()
+slide.addControl('.custom-controls');
