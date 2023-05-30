@@ -79,6 +79,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
+
   }
   .icon {
     margin-top: 15px;
@@ -107,6 +108,7 @@
     padding-top: 25px;
     height: 565px;
     width: 80vw;
+    min-width: 300px;
   }
   .conteudo-apresentacao {
     height: 450px;
@@ -118,6 +120,7 @@
     background-color: rgba(0, 0, 0, 0.897);
     border-radius: 8px;
     padding: 9px;
+    min-width: 300px;
   }
   .conteudo-apresentacao h1 {
     font-size: 1.5em;
@@ -159,6 +162,7 @@
     width: 80vw;
     color: rgb(255, 255, 255);
     border-radius: 8px;
+    min-width: 300px;
   }
   .titulo-projetos {
     font-family: "Open Sans", sans-serif;
@@ -269,12 +273,14 @@
     margin: auto;
     margin-top: 60px;
     border-radius: 8px 8px 0px 0px;
+    min-width: 300px;
   }
   #qualificacoes h2 {
     color: aliceblue;
     font-family: "Open Sans", sans-serif;
     padding: 20px;
     text-align: center;
+
   }
   .qualy {
     height: 120px;
@@ -307,6 +313,7 @@
     height: 370px;
     margin: auto;
     border-radius: 0px 0px 8px 8px;
+    min-width: 300px;
   }
   .slide-wrapper {
     overflow: hidden;
@@ -364,15 +371,16 @@
   #sobre {
     margin: auto;
     margin-top: 60px;
-    height: 380px;
+    height: 410px;
     width: 80vw;
     background-color: rgba(0, 0, 0, 0.897);
     color: black;
     display: grid;
     border-radius: 8px 8px 0 0;
+    min-width: 300px;
   }
   .artigo-sobre {
-    height: 330px;
+    height: 385px;
     width: 90%;
     background-color: rgba(245, 245, 245, 0.836);
     margin: auto;
@@ -422,7 +430,7 @@
     height: 400px;
     width: 80vw;
     background-color: rgba(0, 0, 0, 0.897);
-    border-radius: 0 0 8px 8px;
+    min-width: 300px;
     color: aliceblue;
     font-family: "Open Sans", sans-serif;
   }
@@ -434,12 +442,11 @@
   }
   .c0 {
     width: 80%;
-    height: 50px;
+    height: 75px;
     grid-column: 1/5;
     background-color: rgba(0, 0, 0, 0);
     font-size: 18px;
-    width: 80%;
-    height: 50px;
+    margin-top: 20px;
   }
   .c1 {
     width: 100%;
@@ -489,7 +496,7 @@ height: 100px;
   }
   .c2 {
     width: 80%;
-    height: 50px;
+    height: 25px;
     grid-column: 1/5;
     background-color: rgba(0, 0, 0, 0);
     font-size: 18px;
@@ -499,30 +506,34 @@ height: 100px;
     display: grid;
     justify-items: center;
     border-radius: 0px 0px 0px 8px;
+    align-items: center
   }
   .c4 {
     width: 100%;
     display: grid;
-    justify-items: center
+    justify-items: center;
+    align-items: center
   }
   .c5 {
     width: 100%;
     display: grid;
-    justify-items: center
+    justify-items: center;
+    align-items: center
   }
   .c6 {
     width: 100%;
     display: grid;
     justify-items: center;
     border-radius: 0px 0px 8px 0px;
+    align-items: center
   }
   #contato img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
   /* FOOTER */
   .footer {
-    margin-top: 90px;
+    margin-top: 120px;
     margin-bottom: 10px;
     height: 19px;
     background-color: black;
