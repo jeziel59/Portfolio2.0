@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 768px)  {
+    /* Section - Conteudo */
+    section.base {
+        height: 404px;
+        width: 712px;
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    section > span#fundo {
+        height: 404px;
+        width: 712px;
+    }
+    section {
+        height: 400px;
+        width: 768px;
+        flex-direction: row;
+        transition: 0.2s;
+    }
+    /* Area imagem */
+    section > article#imglogin {
+        height: 400px;
+        width: 300px;
+        border-radius: 40px 0px 0px 40px ;
+        transition: 0.2s;
+        background-image: url(../imagens/subway2.jpg);
+        background-position: bottom center;
+    }
+    /* Area de login */
+    section > article#arealogin {
+        height: 400px;
+        width: 500px;
+        padding-top: 30px;
+        border-radius: 0px 40px 40px 0px ;
+        transition: 0.2s;
+    }
+    section > article p { 
+        margin-bottom: 30px;
+    }
+    /* Dados de Login */
+    section > article > form > div.logindata {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .databox { 
+        width: 250px;
+    }
+    /* Link de cadastre-se*/
+    section > article > form > div.opcoes1 {
+        width: 170px;
+        height: 20px;
+    }
+}

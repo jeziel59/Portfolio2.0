@@ -1,0 +1,194 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+@font-face {
+    font-family: titulo;
+    src: url(../font/Vanilla\ Caramel.otf);
+}
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+  /* Animações */
+  @keyframes show {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -30px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  /*Classe das animações*/
+  .show {
+    animation: show .5s forwards;
+  }
+/* Botão de informações da página */
+  section > article > div.infopage {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-image: url(../imagens/info.png);
+    background-size: cover;
+    margin-left: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
+}
+section > article > div.infobox {
+    display: none;
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 10px;
+    background-image: url(../imagens/phone01.png);
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 70px 0px #000000;
+    
+}
+section > article > div.infobox > p {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 20px; 
+    font-family: 'Dosis', sans-serif;
+}
+img.imglink {
+    height: 15px;
+    width: 15px;
+}
+.infobox a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+}
+ /* Layout da página */
+section#section-grid {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: minmax(200px, 250px) repeat(10, minmax(300px, 250px));
+    gap: 5px;
+}
+/* Cabeçalho */
+section article.head {
+    background-image: url(../imagens/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section article.head > h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2em;
+    margin-top: 50px;
+    text-shadow: 2px 2px 20px #000000;
+    transition: 0.2s;
+}
+/* Botão de informações da lista */
+section > article > div.info {
+    height: 50px;
+    width: 50px;
+    background-image: url(../imagens/info2.png);
+    background-size: cover;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* Balão de informação dos itens*/
+.infotext {
+    display: block;
+    height: 270px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 70px;
+    margin-top: -50px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1em;
+    animation: show .5s forwards;
+}
+.closebox {
+    display: none;
+}
+/* Itens da lista */
+.item1 {
+    background-image: url(../imagens/beagle.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item2 {
+    background-image: url(../imagens/bulldog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item3 {
+    background-image: url(../imagens/chihuahua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item4 {
+    background-image: url(../imagens/boxer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item5 {
+    background-image: url(../imagens/dalmata.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item6 {
+    background-image: url(../imagens/york.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.item7 {
+    background-image: url(../imagens/pastor1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item8 {
+    background-image: url(../imagens/poodle.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.item9 {
+    background-image: url(../imagens/golden1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item10 {
+    background-image: url(../imagens/husky.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Footer */
+section > footer.by {
+    color: #ffffff;
+    height: 25px;
+    margin: auto;
+    background-color: #000000;
+}
+section > footer.by a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+

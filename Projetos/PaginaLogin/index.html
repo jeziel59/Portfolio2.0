@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeziel Silva">
+    <meta name="description" content="Portfólio do desenvolvedor front-end Jeziel Silva">
+    <meta name="keywords" content="porfolio, html, front-end, desenvolvimento, css, javascript">
+    <title>Login</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style/1-Mobile-First.css" media="screen" />
+    <link rel="stylesheet" href="style/2-Tablet.css" media="screen" />
+    <link rel="stylesheet" href="style/3-Desktop.css" media="screen" />
+
+  </head>
+  <body>
+    <main>
+      <section class="base">
+        <span id="fundo" class="fundogiratorio"></span>
+      </section>
+      <section>
+        <div id="info" onclick="clickmenu()"></div>
+        <div id="blockinfo">
+          <div id="infotext">
+            <p>
+              Projeto login; <br />
+              Página responsiva organizada utilizando Flex-Box, Clique na opção
+              “Cadastrar-se” para prosseguir para a próxima página. <br />
+              Você pode conferir aqui o
+              <a
+                href="https://github.com/jeziel59/Portfolio/tree/main/Projeto%20login/tela-login/style"
+                target="_blank"
+                rel="external"
+                >CSS
+                <img src="imagens/link.png" alt="imgem link" class="imglink"
+              /></a>
+              e o
+              <a
+                href="https://github.com/jeziel59/Portfolio/blob/main/Projeto%20login/tela-login/index.html"
+                target="_blank"
+                rel="external"
+                >HTML
+                <img src="imagens/link.png" alt="imgem link" class="imglink"
+              /></a>
+              dessa página!
+            </p>
+          </div>
+        </div>
+        <article id="imglogin"></article>
+        <article id="arealogin">
+          <h1>Seja bem vindo(a)</h1>
+          <p>Insira seu email e senha para continuar sua jornada!</p>
+          <form action="cadastro.php" method="post" autocomplete="on">
+            <div id="ilogindata" class="logindata" name="logg">
+              <label for="iemailbox"
+                ><img
+                  src="imagens/user.png"
+                  alt="imagem usuario"
+                  class="iconlogin"
+              /></label>
+              <input
+                type="email"
+                name="emailbox"
+                id="iemailbox"
+                class="databox"
+                autocomplete="email"
+                placeholder="Email"
+                required
+                minlength="6"
+                maxlength="30"
+                onfocus="dentro(this.id)"
+                onblur="fora(this.id)"
+              />
+            </div>
+            <div class="logindata" id="ilogindata2">
+              <label for="ipassword" id="label2"
+                ><img
+                  src="imagens/key.png"
+                  alt="imagem senha"
+                  class="iconlogin"
+              /></label>
+              <input
+                type="password"
+                name="password"
+                id="ipassword"
+                class="databox"
+                placeholder="Sua senha"
+                required
+                minlength="6"
+                maxlength="10"
+                onfocus="dentro(this.id)"
+                onblur="fora(this.id)"
+              />
+            </div>
+            <input type="submit" value="Entrar" id="entrar" />
+          </form>
+          <div class="opcoes1">
+            <a
+              href="https://jeziel59.github.io/Portfolio/Projeto%20login/tela-cadastro/cadastro.html#"
+              target="_blank"
+              ><p class="opcoes2">Cadastrar-se</p></a
+            >
+          </div>
+          <div class="opcoes1">
+            <a href="#"><p class="opcoes2">Esqueci a senha</p></a>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script>
+      function clickmenu() {
+        if (blockinfo.style.display == "block") {
+          blockinfo.style.display = "none";
+        } else {
+          blockinfo.style.display = "block";
+        }
+      }
+      function dentro() {
+        var element = event.srcElement.id;
+        var previd = document.getElementById(element).parentElement;
+        previd.style.background = "#F87060";
+      }
+      function fora() {
+        var element = event.srcElement.id;
+        var previd = document.getElementById(element).parentElement;
+        previd.style.background = "#CDD7D6";
+      }
+    </script>
+  </body>
+</html>

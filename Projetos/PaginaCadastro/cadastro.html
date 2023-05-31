@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeziel Silva">
+    <meta name="description" content="Portfólio do desenvolvedor front-end Jeziel Silva">
+    <meta name="keywords" content="porfolio, html, front-end, desenvolvimento, css, javascript">
+    <link rel="shortcut icon" href="../tela-cadastro/imagens/favicon.png" type="image/x-icon">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style/1-mobile-first.css" media="screen">
+    <link rel="stylesheet" href="style/2-tablet.css" media="screen">
+    <link rel="stylesheet" href="style/2-desktop.css" media="screen">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <main>
+        <section id="back-area" >
+            <article id="info" onclick="clickmenu()"></article>
+            <div id="infotext">
+                <p>Projeto login; <br>
+                Nesta página de formulário foi utilizado Flex-Box e Grid Layout para organização e responsividade,<br>
+                Você pode conferir aqui o <a href="https://github.com/jeziel59/Portfolio/tree/main/Projeto%20login/tela-cadastro/style" target="_blank" rel="external">CSS <img src="imagens/link.png" alt="imgem link" class="imglink"></a> e o <a href="https://github.com/jeziel59/Portfolio/blob/main/Projeto%20login/tela-cadastro/cadastro.html" target="_blank" rel="external">HTML <img src="imagens/link.png" alt="imgem link" class="imglink"></a> dessa página!
+                </p>
+            </div>
+            <article class="imgcad"></article>
+            <article id="cabecalho">
+                <h1>Cadastre-se!</h1>
+                <p>Preencha seus dados e clique em cadastrar</p>
+            </article>
+            <form action="cadastro.php" method="post" autocomplete="on">
+                <p>Dados de login</p>
+                <div class="flex-item" id="emailf">
+                    <fieldset>
+                        <label for="iemail">E-mail: </label>
+                        <input type="email" name="email" id="iemail" class="input" placeholder="Seu e-mail*" required autocomplete="email" onfocus="dentro(this.id)" onblur="fora(this.id)">
+                    </fieldset>
+                </div>
+                <div class="flex-item">
+                    <fieldset>
+                        <label for="iemail2">Repetir e-mail: </label>
+                        <input type="email2" name="email" id="iemail2" class="input" placeholder="Repetir e-mail*" required onfocus="dentro(this.id)" onblur="fora(this.id)">
+                    </fieldset>
+                </div>
+                <div class="flex-item">
+                    <fieldset>
+                        <label for="ipassword">Senha: </label>
+                        <input type="password" name="password" id="ipassword" class="input" placeholder="Nova senha*" required onfocus="dentro(this.id)" onblur="fora(this.id)">
+                    </fieldset>
+                </div>
+                <div class="flex-item">
+                    <fieldset>
+                        <label for="ipassword2">Repetir senha: </label>
+                        <input type="password2" name="password" id="ipassword2" class="input" placeholder="Repetir nova senha*" required onfocus="dentro(this.id)" onblur="fora(this.id)">
+                    </fieldset>
+                </div>
+                <p>Dados pessoais</p>
+                <div class="flex-item">
+                    <fieldset>
+                        <label for="inome">Nome: </label>
+                        <input type="text" name="nome" id="inome" class="input" placeholder="Primeiro nome*" required onfocus="dentro(this.id)" onblur="fora(this.id)">
+                    </fieldset>
+                </div>
+                <div class="flex-item">
+                    <fieldset>
+                        <label for="isobrenome">Sobrenome: </label>
+                        <input type="text" name="sobrenome" id="isobrenome" class="input" placeholder="Sobrenome*" required onfocus="dentro(this.id)" onblur="fora(this.id)">
+                    </fieldset>
+                </div>
+                <div class="flex-item">
+                    <fieldset>
+                        <label for="iphone">Telefone: </label>
+                            <input type="tel" name="phone" id="iphone" pattern="[0-9]{2}[0-9]{9}" placeholder="DDD + Telefone*" class="input" required onfocus="dentro(this.id)" onblur="fora(this.id)">
+                    </fieldset>
+                </div>
+                <div class="flex-item">
+                    <fieldset>
+                        <label for="icpf">CPF: </label>
+                        <input type="text" name="cpf" id="icpf" class="input" placeholder="CPF*" required onfocus="dentro(this.id)" onblur="fora(this.id)">
+                    </fieldset>
+                </div>
+                <div class="flex-item">
+                    <fieldset>
+                        <label>Sexo: </label><br>
+                        <input type="radio" name="sexo" id="imasc" value="M" onfocus="dentro(this.id)" onblur="fora(this.id)"><label for="imasc"> Masculino</label >
+                        <input type="radio" name="sexo" id="ifem" value="F" onfocus="dentro(this.id)" onblur="fora(this.id)"><label for="ifem"> Feminino</label>
+                    </fieldset>
+                </div>
+                <div class="flex-item">
+                    <fieldset>
+                        <label for="inasc">Data de nascimento:</label>
+                        <input type="date" name="nasc" id="inasc" class="input2" onfocus="dentro(this.id)" onblur="fora(this.id)">
+                    </fieldset>
+                </div>
+                <p>Endereço</p>
+                <div class="flex-item">
+                    <fieldset>
+                        <label for="icep">CEP:</label>
+                        <input type="number" name="cep" id="icep" class="input" onfocus="dentro(this.id)" onblur="fora(this.id)">
+                    </fieldset>
+                </div>
+                <div class="flex-item">
+                    <fieldset>
+                        <label for="irua">Rua:</label>
+                        <input type="text" name="rua" id="irua" class="input" onfocus="dentro(this.id)" onblur="fora(this.id)">
+                    </fieldset>
+                </div>
+                <div class="flex-item">
+                    <fieldset>
+                        <label for="inumero">Numero:</label>
+                        <input type="number" name="numero" id="inumero" class="input" onfocus="dentro(this.id)" onblur="fora(this.id)">
+                    </fieldset>
+                </div>
+                <div class="flex-item">
+                    <fieldset>
+                        <label for="ibairro">Bairro:</label>
+                        <input type="text" name="bairro" id="ibairro" class="input" onfocus="dentro(this.id)" onblur="fora(this.id)">
+                    </fieldset>
+                </div>
+                <div class="flex-item">
+                    <fieldset>
+                        <label for="icidade">cidade:</label>
+                        <input type="text" name="cidade" id="icidade" class="input" onfocus="dentro(this.id)" onblur="fora(this.id)">
+                    </fieldset>
+                </div>
+                <div class="flex-item">
+                    <fieldset>
+                        <label for="iestado">Estado:</label>
+                        <select id="iestado" name="estado" class="input2" onfocus="dentro(this.id)" onblur="fora(this.id)">
+                            <option value="" selected></option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <input type="submit" value="Cadastrar" class="button">
+            </form>
+            <footer class="fim">
+                <p><a href="https://jeziel59.github.io/Portfolio/Principal/index.html#">Voltar a página de Portfólio Jeziel Silva <img src="imagens/link.png" alt="imgem link" class="imglink"></a></p>
+            </footer>
+        </section>
+    </main>
+    <script>
+    function clickmenu() {
+        if (infotext.style.display == 'block') {
+            infotext.style.display = 'none' 
+        } else {
+            infotext.style.display = 'block'
+        }
+    }
+    function dentro() {
+            var element = (event.srcElement.id);
+            var previd = document.getElementById(element).parentElement;
+            previd.style.background = "#F87060";
+
+        }
+        function fora() {
+            var element = (event.srcElement.id);
+            var previd = document.getElementById(element).parentElement;
+            previd.style.background = "#CDD7D6";
+        }
+</script>
+</body>
+</html>
