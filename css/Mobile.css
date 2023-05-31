@@ -42,6 +42,12 @@
     box-sizing: border-box;
   }
   body {
+    background: rgb(24,24,24);
+    background: linear-gradient(0deg, rgba(24,24,24,1) 0%, rgba(0,0,0,1) 100%);
+  }
+  .fundo {
+    width: 100%;
+    height: 725px;
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,7 +176,7 @@
   /* PROJETOS */
   #projetos {
     margin: auto;
-    margin-top: 60px;
+
     height: 970px;
     background-color: var(--pretoTransparente);
     width: 80vw;

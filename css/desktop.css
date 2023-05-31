@@ -1,4 +1,7 @@
 @media screen and (min-width: 800px) {
+  .fundo {
+    height: 750px;
+  }
   /* HEAD */
   .menuMobile {
     display: none;
