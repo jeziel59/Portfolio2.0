@@ -428,7 +428,7 @@
     display: grid;
     margin: auto;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: -1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
     height: 490px;
@@ -439,10 +439,7 @@
     font-family: "Open Sans", sans-serif;
     border-radius: 0px 0px 8px 8px;
   }
-  .contact {
-    height: 80px;
-    width: 80px;
-  }
+
   .c0 {
     width: 80%;
     height: 75px;
@@ -497,6 +494,7 @@
     height: 25px;
     grid-column: 1/5;
     font-size: 18px;
+    margin-bottom: 25px;
   }
   .c3 {
     width: 100%;
