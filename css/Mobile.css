@@ -125,6 +125,11 @@
     margin-bottom: 60px;
     border-radius: 10px;
   }
+  .item a:hover {
+    text-decoration: none;
+    color: var(--cinzaClaro);
+    border-radius: 20px;
+  }
   /* APRESENTAÇÕES */
   #apresentacao {
     margin: auto;
