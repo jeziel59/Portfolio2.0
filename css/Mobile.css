@@ -64,7 +64,7 @@
   }
   .menuMobile {
     height: 30px;
-    width: 30px;
+    width: 45px;
     margin-left: 10px;
     margin-top: 10px;
     position: absolute;
@@ -83,6 +83,7 @@
     background-color: var(--preto);
     position: absolute;
     margin-top: 60px;
+    border-radius: 0px 0px 10px 0px;
     display: none;
   }
   .activeMenu {
@@ -200,6 +201,7 @@
     text-decoration: none;
     color: var(--branco);
     font-weight: bold;
+    text-decoration: underline;
   }
   .caixa-projetos {
     display: grid;
