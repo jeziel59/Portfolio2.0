@@ -1,6 +1,10 @@
 @media screen and (min-width: 560px) {
 #sobre {
   margin-top: 27%;
+  height: 300px;
+}
+.artigo-sobre {
+  height: 255px;
 }
 }
 
@@ -146,7 +150,7 @@
     margin-top: 60px;
   }
   .artigo-sobre {
-    height: 80%;
+    height: 90%;
     width: 90%;
     margin: auto;
     font-family: "Open Sans", sans-serif;
